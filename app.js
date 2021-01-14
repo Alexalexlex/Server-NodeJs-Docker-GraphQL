@@ -4,7 +4,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const schema = require('./graphql/schema')
 const controllers = require('./graphql/controllers')
-const pg = require('pg');
 
 app.use(bodyParser.json())
 
