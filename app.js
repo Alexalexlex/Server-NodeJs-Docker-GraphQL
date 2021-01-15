@@ -7,6 +7,10 @@ const controllers = require('./graphql/controllers')
 
 app.use(bodyParser.json())
 
+app.get('/', (req,res) => {
+    res.send('<h1 style="text-align:center; padding:20%">Hello, its Docker in touch!</h1>')
+})
+
 app.use('/graphql', graphqlHTTP({
     schema: schema,
     rootValue: controllers,

@@ -5,12 +5,12 @@
   "scripts": {
     "start": "node app.js",
     "compose": "docker-compose up --build -d",
-    "shell": "docker exec -it graphql-app bash",
+    "jump": "docker exec -it graphql-app bash",
     "migrate": "sequelize db:migrate",
-    "down": "docker-compose down || docker volume rm $(docker volume ls) || docker rmi $(docker images)"
+    "down": "docker-compose down && docker volume rm $(docker volume ls) || docker rmi $(docker images)"
   },
   "dependencies": {
-    "body-parser": "^1.19.0", 
+    "body-parser": "^1.19.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
