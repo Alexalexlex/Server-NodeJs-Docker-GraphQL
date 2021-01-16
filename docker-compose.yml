@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    build: .
+    image: alexalexlex/servergraphql
     container_name: graphql-app
     depends_on:
       - db
