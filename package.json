@@ -7,7 +7,7 @@
     "compose": "docker-compose up --build -d",
     "jump": "docker exec -it graphql-app bash",
     "migrate": "sequelize db:migrate",
-    "down": "docker-compose down && docker volume rm $(docker volume ls) || docker rmi $(docker images)"
+    "down": "docker-compose down && docker volume rm $(docker volume ls) || docker rmi $(docker images -q)"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
