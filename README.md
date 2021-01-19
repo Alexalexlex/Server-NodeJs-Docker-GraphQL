@@ -15,3 +15,11 @@ Find here id your app container, then run
 Then Run
 
 ### sequelize db:migrate
+
+# OR JUST use npm
+
+## 1) npm run compose
+## 2) npm run jump
+## 3) npm run migrate
+
+### Use "npm run down" and docker delete all images, containers and volumes
