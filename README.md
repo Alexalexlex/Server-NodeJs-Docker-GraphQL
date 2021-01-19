@@ -22,4 +22,4 @@ Then Run
 ## npm run jump
 ## npm run migrate
 
-## Use *npm run down* and docker delete all images, containers and volumes
+### Use "npm run down" and docker delete all images, containers and volumes
