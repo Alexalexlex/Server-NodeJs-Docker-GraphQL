@@ -18,8 +18,8 @@ Then Run
 
 # OR JUST use npm
 
-## npm run compose
-## npm run jump
-## npm run migrate
+## 1) npm run compose
+## 2) npm run jump
+## 3) npm run migrate
 
 ### Use "npm run down" and docker delete all images, containers and volumes
